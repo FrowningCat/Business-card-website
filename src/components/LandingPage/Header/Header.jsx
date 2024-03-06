@@ -32,22 +32,35 @@ export default function Header() {
                         Список социальных сетей
                     </h4>
                     <div className="header__textBlock__listOfSocialNetworks__link">
-                        <a href="https://vk.com/id300779486" target="_blank">
+                        <a
+                            href="https://vk.com/id300779486"
+                            className="a"
+                            target="_blank"
+                        >
                             Vk
                         </a>
                         |
-                        <a href="https://t.me/Frowning_Cat" target="_blank">
+                        <a
+                            href="https://t.me/Frowning_Cat"
+                            className="a"
+                            target="_blank"
+                        >
                             Telegram
                         </a>
                         |
                         <a
                             href="https://github.com/FrowningCat?tab=repositories"
+                            className="a"
                             target="_blank"
                         >
                             Github
                         </a>
                         |
-                        <a href="vsavinkov60@gmail.com" target="_blank">
+                        <a
+                            href="vsavinkov60@gmail.com"
+                            className="a"
+                            target="_blank"
+                        >
                             vsavinkov60@gmail.com
                         </a>
                     </div>

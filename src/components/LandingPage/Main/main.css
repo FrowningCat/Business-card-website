@@ -1,0 +1,58 @@
+.a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin: 10% 0 5%;
+  display: flex;
+  max-width: 70vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+  padding: 1% 0 1%;
+  justify-content: center;
+  margin-left: 15vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #2d2d2d;
+}
+.main__examplesOfWorksBlock {
+  display: grid;
+  margin: 1rem;
+}
+.main__examplesOfWorksBlock__title {
+  font-size: 20.46px;
+  line-height: 22.3px;
+}
+.main__examplesOfWorksBlock__listProducts {
+  width: 90vw;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  gap: 2rem;
+  justify-content: center;
+}
+.main__examplesOfWorksBlock__listProducts__specificProduct {
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+.main__examplesOfWorksBlock__listProducts__specificProduct__img {
+  border-radius: 20px;
+}
+.main__examplesOfWorksBlock__listProducts__specificProduct__name {
+  font-size: 21.59px;
+  line-height: 16.9px;
+  color: #111;
+}
+.main__examplesOfWorksBlock__listProducts__specificProduct__language {
+  font-size: 16.7px;
+  line-height: 13px;
+}
+.main__examplesOfWorksBlock__listProductsColumn {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(1, 130px);
+  gap: 20px;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
