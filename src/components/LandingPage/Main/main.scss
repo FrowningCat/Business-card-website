@@ -1,34 +1,69 @@
 $textColor: #2d2d2d;
+$rareTextColor: #404040;
 $textColorAdditionally: #111;
 
 $textFontSizeMain: 16.7px;
-$titleFontSizeMain: 20.46px;
-$titleFontSizeAdditionally: 21.59px;
+$titleFontSizeMain: 23.46px;
+$titleFontSizeAdditionally: 19.59px;
 
-$textLineHeightMain: 13px;
-$titleLineHeightMain: 22.3px;
-$titleLineHeightAdditionally: 16.9px;
+$textLineHeightMain: 20px;
+$titleLineHeightMain: 30.3px;
+$titleLineHeightAdditionally: 26.9px;
+
+$titleSizeText: 700;
 
 .a:hover {
     text-decoration: underline;
 }
 
-.main {
-    margin: 10% 0 5%;
+details {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 10%));
+    border-radius: 12px;
+    padding: 24px;
+    font-size: $textFontSizeMain;
+    line-height: $textLineHeightMain;
+    color: $rareTextColor;
+}
+
+details > p {
+    padding-top: 18px;
+}
+
+.chevron {
+    height: 28px;
+    width: 28px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: $titleFontSizeMain;
+    line-height: $titleLineHeightMain;
+    font-weight: $titleSizeText;
+    color: $textColor;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    margin: 10% 0 10%;
+    display: grid;
     max-width: 70vw;
     max-height: 100vh;
     box-sizing: border-box;
-    padding: 1% 0 1%;
-    justify-content: center;
     margin-left: 15vw;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    text-align: center;
+    gap: 5rem;
     color: $textColor;
     &__examplesOfWorksBlock {
+        padding: 1% 0 1%;
         display: grid;
+        justify-content: center;
+        margin-left: 15vw;
+        text-align: center;
         margin: 1rem;
+        max-width: 70vw;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
         &__title {
             font-size: $titleFontSizeMain;
             line-height: $titleLineHeightMain;
@@ -64,6 +99,28 @@ $titleLineHeightAdditionally: 16.9px;
             grid-template-columns: repeat(1, 130px);
             gap: 20px;
             justify-content: center;
+        }
+    }
+    &__education {
+        padding: 1% 0 1%;
+        display: grid;
+        justify-content: center;
+        margin-left: 15vw;
+        text-align: center;
+        margin: 1rem;
+        max-width: 70vw;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        &__title {
+            font-size: $titleFontSizeMain;
+            line-height: $titleLineHeightMain;
+        }
+        &__faqDetails {
+            width: 70vw;
+            text-align: start;
+            margin-top: 3%;
+            display: grid;
+            gap: 12px;
         }
     }
 }

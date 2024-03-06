@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;700&family=Roboto&display=swap');
+
+$mainFontFamily: 'Manrope';
+$mainSizeText: 400;
 $linkColor: #86898f;
 $backgroundColor: #f1f1f1;
 
 * {
+    font-family: $mainFontFamily;
     background: $backgroundColor;
     margin: 0;
     padding: 0;
