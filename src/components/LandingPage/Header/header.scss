@@ -1,20 +1,74 @@
+$textColor: #2d2d2d;
+$linkColor: #86898f;
+
+$textFontSizeMain: 16.7px;
+$titleFontSizeMain: 40.82px;
+$titleFontSizeAdditionally: 21.59px;
+
+$textLineHeightMain: 19px;
+$titleLineHeightMain: 44px;
+$titleLineHeightAdditionally: 16.9px;
+
 .header {
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 5%;
+    justify-content: center;
+    gap: 60px;
+    color: $textColor;
+    font-size: $textFontSizeMain;
+    line-height: $textLineHeightMain;
     &__avatar {
+        pointer-events: none;
+        height: 350px;
+        width: 250px;
+        border-radius: 100px 100px 0 0;
     }
     &__textBlock {
+        width: 40%;
+        display: grid;
+        gap: 12px;
         &__info {
+            display: grid;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding-left: 12px;
             &__topTitle {
+                padding-top: 12px;
+                font-size: $titleFontSizeAdditionally;
+                line-height: $titleLineHeightAdditionally;
             }
             &__title {
-            }
-            &__aboutMe {
+                font-size: $titleFontSizeMain;
+                line-height: $titleLineHeightMain;
             }
         }
         &__listOfSocialNetworks {
+            display: grid;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding-left: 12px;
             &__title {
+                padding-top: 12px;
+                font-size: $titleFontSizeAdditionally;
+                line-height: $titleLineHeightAdditionally;
             }
             &__link {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: $linkColor;
+                padding-bottom: 12px;
             }
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: grid;
+        gap: 34px;
     }
 }

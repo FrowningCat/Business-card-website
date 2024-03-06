@@ -4,11 +4,6 @@ import './header.css';
 export default function Header() {
     return (
         <div className="header">
-            <img
-                src={I}
-                alt="Владислав Савинков"
-                className="header__avatar"
-            ></img>
             <div className="header__textBlock">
                 <span className="header__textBlock__info">
                     <p className="header__textBlock__info__topTitle">
@@ -19,7 +14,10 @@ export default function Header() {
                     </h3>
                     <p className="header__textBlock__info__aboutMe">
                         Добрый день. Ищу работу на позицию front-end dev.
-                        Трудолюбивый, коммуникативный, трудностей не боюсь)
+                        <b>
+                            {' '}
+                            Трудолюбивый, коммуникативный, трудностей не боюсь)
+                        </b>
                         <br />
                         <br />
                         Ищу копанию, в которой буду совершенствоваться и расти
@@ -48,10 +46,18 @@ export default function Header() {
                         >
                             Github
                         </a>
-                        |<p>vsavinkov60@gmail.com</p>
+                        |
+                        <a href="vsavinkov60@gmail.com" target="_blank">
+                            vsavinkov60@gmail.com
+                        </a>
                     </div>
                 </span>
             </div>
+            <img
+                src={I}
+                alt="Владислав Савинков"
+                className="header__avatar"
+            ></img>
         </div>
     );
 }

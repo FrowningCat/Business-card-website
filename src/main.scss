@@ -1,5 +1,15 @@
+$linkColor: #86898f;
+$backgroundColor: #f1f1f1;
+
+* {
+    background: $backgroundColor;
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
+    color: $linkColor;
     &:hover {
         text-decoration: underline;
     }
