@@ -126,13 +126,27 @@ export default function Header() {
                             />
                         </summary>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
+                            Это довольно большой проект целю которого являться
+                            создание платформы, где пользователь сможет
+                            ознакомиться с историческими деятелями и посмотреть
+                            на них с другой стороны
+                            <br />
+                            <br />
+                            Но сейчас он имеет не финальный свой вид, так я
+                            планирую изменить:
+                            <ul>
+                                <li>
+                                    Создание страниц со статьями, так планиру
+                                    это делат через react-router-dom и работу с
+                                    json файлами,
+                                </li>
+                                <li>Доработать адаптивные возможности,</li>
+                                <li>
+                                    Изменить цветовую гамму, да и в принципе
+                                    изменить общий стиль,
+                                </li>
+                                <li>Произвести рефакторинг код.</li>
+                            </ul>
                         </p>
                     </details>
                     <details>
@@ -148,13 +162,22 @@ export default function Header() {
                             />
                         </summary>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
+                            Хочу сделать удобный сайт, во всех смыслах этого
+                            слова, где пользователи смогут найти всю
+                            интересующую их информацию. Так, например, они
+                            смогут найти:
+                            <ul>
+                                <li>
+                                    Подробную информацию про замки и существ,
+                                </li>
+                                <li>Стоимость охраны,</li>
+                                <li>
+                                    Подробную информацию про каждый популярный
+                                    шаблон,
+                                </li>
+                                <li>Ссылки на блогеров по данной игре,</li>
+                                <li>И подобную полезную информацию.</li>
+                            </ul>
                         </p>
                     </details>
                     <details>
@@ -167,13 +190,15 @@ export default function Header() {
                             />
                         </summary>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
+                            Так как у меня имеется довольно большая коллекция
+                            мемов, на данный момент их более 3 тысяч, я подумал
+                            что будет интересным оптом написать сайт где
+                            ролтзоаателб будет показываться мем на основе его
+                            вкусовых предпочтений.
+                            <br />
+                            <br />
+                            Если брать более глобально, то хочеться создать
+                            такой своеобразный аналог Netflix, только с мемами)
                         </p>
                     </details>
                 </div>
