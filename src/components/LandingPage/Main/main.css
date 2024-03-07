@@ -25,14 +25,15 @@
   width: 90vw;
   margin-top: 3%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
+  grid-template-columns: repeat(3, 8.5rem);
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .main__examplesOfWorksBlock__listProducts__specificProduct {
   display: grid;
   gap: 6px;
   text-align: center;
+  justify-content: center;
 }
 .main__examplesOfWorksBlock__listProducts__specificProduct__img {
   border-radius: 20px;
@@ -45,6 +46,9 @@
 .main__examplesOfWorksBlock__listProducts__specificProduct__language {
   font-size: 16.7px;
   line-height: 20px;
+}
+.main__examplesOfWorksBlock__listProducts__specificProduct:hover .main__examplesOfWorksBlock__listProducts__specificProduct__name {
+  text-decoration: underline;
 }
 .main__examplesOfWorksBlock__listProductsColumn {
   display: grid;
@@ -151,6 +155,16 @@ summary {
   animation: flashing 3s infinite;
 }
 
+@media (max-width: 1000px) {
+  .main__examplesOfWorksBlock__listProducts {
+    grid-template-columns: repeat(2, 8.5rem);
+  }
+}
+@media (max-width: 580px) {
+  .main__examplesOfWorksBlock__listProducts {
+    grid-template-columns: repeat(1, 8.5rem);
+  }
+}
 @keyframes flashing {
   0% {
     text-shadow: 0 0 50px deeppink, 0 0 50px deeppink, 0 0 50px deeppink;

@@ -41,13 +41,14 @@ $titleSizeText: 700;
             width: 90vw;
             margin-top: 3%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, 20rem);
+            grid-template-columns: repeat(3, 8.5rem);
             gap: 2rem;
-            justify-content: center;
+            justify-content: space-evenly;
             &__specificProduct {
                 display: grid;
                 gap: 6px;
                 text-align: center;
+                justify-content: center;
                 &__img {
                     border-radius: 20px;
                 }
@@ -60,6 +61,9 @@ $titleSizeText: 700;
                     font-size: $textFontSizeMain;
                     line-height: $textLineHeightMain;
                 }
+            }
+            &__specificProduct:hover &__specificProduct__name {
+                text-decoration: underline;
             }
         }
         &__listProductsColumn {
@@ -173,6 +177,26 @@ summary {
 
 .anim {
     animation: flashing 3s infinite;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        &__examplesOfWorksBlock {
+            &__listProducts {
+                grid-template-columns: repeat(2, 8.5rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .main {
+        &__examplesOfWorksBlock {
+            &__listProducts {
+                grid-template-columns: repeat(1, 8.5rem);
+            }
+        }
+    }
 }
 
 @keyframes flashing {
