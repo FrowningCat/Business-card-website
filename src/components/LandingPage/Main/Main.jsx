@@ -213,7 +213,7 @@ export default function Header() {
                             <img src={clipboard} alt="clipboard" />
                         </div>
                         <div className="main__softSkills__listSkills__explanation__title">
-                            Bekend
+                            Frontend
                         </div>
                         <div className="main__softSkills__listSkills__explanation__text">
                             <p>HTML5</p>
@@ -242,11 +242,13 @@ export default function Header() {
                             <img src={clipboard} alt="clipboard" />
                         </div>
                         <div className="main__softSkills__listSkills__explanation__title">
-                            Другие
+                            Другое
                         </div>
                         <div className="main__softSkills__listSkills__explanation__text">
                             <p>ООП</p>
                             <p>Figma</p>
+                            <p>Алгоритмы</p>
+                            <p>VirtualBox</p>
                         </div>
                     </div>
                 </div>
