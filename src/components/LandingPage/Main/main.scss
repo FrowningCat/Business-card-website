@@ -6,9 +6,9 @@ $four04MainTextColor: red;
 $four04AdditionallyTextColor: darkred;
 $neon404Coor: deeppink;
 
-$textFontSizeMain: 16.7px;
-$titleFontSizeMain: 23.46px;
-$titleFontSizeAdditionally: 19.59px;
+$textFontSizeMain: 1.5rem;
+$titleFontSizeMain: 2rem;
+$titleFontSizeAdditionally: 1.7rem;
 
 $textLineHeightMain: 20px;
 $titleLineHeightMain: 30.3px;
@@ -123,7 +123,7 @@ $titleSizeText: 700;
             margin-top: 1%;
             display: grid;
             grid-template-columns: repeat(auto-fit, 20rem);
-            grid-template-rows: repeat(auto-fit, 2rem);
+            grid-template-rows: repeat(auto-fit, 3rem);
             gap: 2rem;
             justify-content: center;
             &__explanation {

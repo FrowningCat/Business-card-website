@@ -5,10 +5,10 @@
   box-sizing: border-box;
   padding-top: 5%;
   justify-content: center;
-  gap: 60px;
+  gap: 3rem;
   color: #2d2d2d;
-  font-size: 16.7px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .header__avatar {
   pointer-events: none;
@@ -19,7 +19,7 @@
 .header__textBlock {
   width: 40%;
   display: grid;
-  gap: 12px;
+  gap: 1rem;
 }
 .header__textBlock__info {
   display: grid;
@@ -29,12 +29,12 @@
 }
 .header__textBlock__info__topTitle {
   padding-top: 12px;
-  font-size: 21.59px;
-  line-height: 16.9px;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
 }
 .header__textBlock__info__title {
-  font-size: 40.82px;
-  line-height: 44px;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 .header__textBlock__listOfSocialNetworks {
   display: grid;
@@ -44,8 +44,8 @@
 }
 .header__textBlock__listOfSocialNetworks__title {
   padding-top: 12px;
-  font-size: 21.59px;
-  line-height: 16.9px;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
 }
 .header__textBlock__listOfSocialNetworks__link {
   display: flex;
@@ -68,5 +68,10 @@
   }
   .header__textBlock {
     width: 100%;
+  }
+}
+@media (max-width: 866px) {
+  .header__avatar {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */

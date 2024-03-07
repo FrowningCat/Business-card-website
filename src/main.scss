@@ -20,3 +20,21 @@ a {
     text-decoration: none;
     color: $linkColor;
 }
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 8px;
+    }
+}

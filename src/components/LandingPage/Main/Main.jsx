@@ -136,23 +136,6 @@ export default function Header() {
                     </span>
                 </h5>
                 <div className="main__softSkills__listSkills">
-                    {/* <div className="main__softSkills__listSkills__explanation">
-                        <div className="main__softSkills__listSkills__explanation__clipboard">
-                            <img src={clipboard} alt="clipboard" />
-                        </div>
-                        <div className="main__softSkills__listSkills__explanation__title">
-                            Frontend
-                        </div>
-                        <div className="main__softSkills__listSkills__explanation__text">
-                            <p>HTML5</p>
-                            <p>SCC3 / Sass / Scss</p>
-                            <p>JavaScript</p>
-                            <p>TypeScript</p>
-                            <p>React</p>
-                            <p>Next.js</p>
-                            <p>Node.js</p>
-                        </div>
-                    </div> */}
                     <div className="main__softSkills__listSkills__explanation">
                         <div className="main__softSkills__listSkills__explanation__clipboard">
                             <img src={clipboard} alt="clipboard" />

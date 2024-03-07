@@ -1,13 +1,13 @@
 $textColor: #2d2d2d;
 $linkColor: #86898f;
 
-$textFontSizeMain: 16.7px;
-$titleFontSizeMain: 40.82px;
-$titleFontSizeAdditionally: 21.59px;
+$textFontSizeMain: 1rem;
+$titleFontSizeMain: 3rem;
+$titleFontSizeAdditionally: 1.5rem;
 
-$textLineHeightMain: 19px;
-$titleLineHeightMain: 44px;
-$titleLineHeightAdditionally: 16.9px;
+$textLineHeightMain: 1.5rem;
+$titleLineHeightMain: 3rem;
+$titleLineHeightAdditionally: 1.6rem;
 
 .header {
     display: flex;
@@ -16,7 +16,7 @@ $titleLineHeightAdditionally: 16.9px;
     box-sizing: border-box;
     padding-top: 5%;
     justify-content: center;
-    gap: 60px;
+    gap: 3rem;
     color: $textColor;
     font-size: $textFontSizeMain;
     line-height: $textLineHeightMain;
@@ -29,7 +29,7 @@ $titleLineHeightAdditionally: 16.9px;
     &__textBlock {
         width: 40%;
         display: grid;
-        gap: 12px;
+        gap: 1rem;
         &__info {
             display: grid;
             border: 1px solid black;
@@ -78,6 +78,14 @@ $titleLineHeightAdditionally: 16.9px;
         }
         &__textBlock {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 866px) {
+    .header {
+        &__avatar {
+            display: none;
         }
     }
 }
