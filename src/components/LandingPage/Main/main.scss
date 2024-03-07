@@ -123,7 +123,7 @@ $titleSizeText: 700;
             margin-top: 1%;
             display: grid;
             grid-template-columns: repeat(auto-fit, 20rem);
-            grid-template-rows: repeat(3, 2rem);
+            grid-template-rows: repeat(auto-fit, 2rem);
             gap: 2rem;
             justify-content: center;
             &__explanation {
@@ -184,6 +184,18 @@ summary {
         &__examplesOfWorksBlock {
             &__listProducts {
                 grid-template-columns: repeat(2, 8.5rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 1138px) {
+    .main {
+        &__softSkills {
+            &__listSkills {
+                gap: 3rem;
+                grid-template-columns: repeat(1, 20rem);
+                grid-template-rows: minmax(3rem, 18rem);
             }
         }
     }

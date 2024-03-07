@@ -105,7 +105,7 @@
   margin-top: 1%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
-  grid-template-rows: repeat(3, 2rem);
+  grid-template-rows: repeat(auto-fit, 2rem);
   gap: 2rem;
   justify-content: center;
 }
@@ -158,6 +158,13 @@ summary {
 @media (max-width: 1000px) {
   .main__examplesOfWorksBlock__listProducts {
     grid-template-columns: repeat(2, 8.5rem);
+  }
+}
+@media (max-width: 1138px) {
+  .main__softSkills__listSkills {
+    gap: 3rem;
+    grid-template-columns: repeat(1, 20rem);
+    grid-template-rows: minmax(3rem, 18rem);
   }
 }
 @media (max-width: 580px) {
