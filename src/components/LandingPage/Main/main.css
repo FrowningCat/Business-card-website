@@ -1,11 +1,11 @@
 .main {
-  margin: 10% 0;
+  margin: 15rem 0;
   display: grid;
   max-width: 70vw;
   max-height: 100vh;
   box-sizing: border-box;
   margin-left: 15vw;
-  gap: 5rem;
+  gap: 10rem;
   color: #2d2d2d;
 }
 .main__examplesOfWorksBlock {
