@@ -57,15 +57,7 @@ export default function Header() {
                         <p>
                             Прикладная информатика / Информационные технологии
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
-                        </p>
+                        <p>Lorem.</p>
                     </details>
                     <details>
                         <summary>
@@ -77,15 +69,51 @@ export default function Header() {
                             />
                         </summary>
                         <p>2020-2022</p>
-                        <p>Веб разработчик / Пакет мастер</p>
+                        <p>Frontend-разработчик с нуля до Middle</p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
+                            На{' '}
+                            <a
+                                href="https://gb.ru/geek_university/developer/programmer/frontend/master"
+                                className="a"
+                                target="_blank"
+                            >
+                                данном куре
+                            </a>{' '}
+                            я приобрел знания в следующих дисциплинах:
+                            <ul>
+                                <li>
+                                    JavaScript
+                                    <ul>
+                                        <li>ООП в JavaScript,</li>
+                                        <li>
+                                            Циклы, массивы, структуры данных,
+                                        </li>
+                                        <li>Асинхронные запросы,</li>
+                                        <li>Регулярные выражения.</li>
+                                    </ul>
+                                </li>
+                                <li>Работа с алгоритмами</li>
+                                <li>
+                                    React
+                                    <ul>
+                                        <li>Жизненный цикл компонента,</li>
+                                        <li>Children. Роутинг в React,</li>
+                                        <li>React-redux,</li>
+                                        <li>API.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    HTML5 и CSS3
+                                    <ul>
+                                        <li>Анимации</li>
+                                        <li>Адаптив и Релетив</li>
+                                        <li>Scss и Sass</li>
+                                    </ul>
+                                </li>
+                                <li>TupeScript</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                            </ul>
                         </p>
                     </details>
                     <details>
@@ -102,13 +130,25 @@ export default function Header() {
                             Веб разработка - с нуля до профессионала. Full Stack
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nesciunt odio nobis ratione, minus impedit
-                            debitis quam facere reiciendis perspiciatis cum
-                            iusto placeat culpa accusantium dolores harum ab
-                            totam pariatur soluta. Nulla, corrupti? Repudiandae
-                            perspiciatis aliquam similique voluptas. Iure,
-                            officiis deleniti.
+                            На{' '}
+                            <a
+                                href="https://www.udemy.com/course/web-full-stack/learn/practice/1069046?start=start-page#overview"
+                                className="a"
+                                target="_blank"
+                            >
+                                данном куре
+                            </a>{' '}
+                            я приобрел знания в следующих дисциплинах:
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>Работа с алгоритмами</li>
+                                <li>React</li>
+                                <li>HTML5 и CSS3</li>
+                                <li>TupeScript</li>
+                                <li>MySQL</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                            </ul>
                         </p>
                     </details>
                 </div>
