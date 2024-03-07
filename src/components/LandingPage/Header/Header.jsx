@@ -57,7 +57,7 @@ export default function Header() {
                         </a>
                         |
                         <a
-                            href="vsavinkov60@gmail.com"
+                            href="mailto:vsavinkov60@gmail.com"
                             className="a"
                             target="_blank"
                         >

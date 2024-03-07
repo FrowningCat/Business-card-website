@@ -53,7 +53,10 @@ export default function Header() {
                                 className="chevron link"
                             />
                         </summary>
-                        <p>2020-2020</p>
+                        <p>2018-2022</p>
+                        <p>
+                            Прикладная информатика / Информационные технологии
+                        </p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nesciunt odio nobis ratione, minus impedit
@@ -73,7 +76,8 @@ export default function Header() {
                                 className="chevron link"
                             />
                         </summary>
-                        <p>2020-2020</p>
+                        <p>2020-2022</p>
+                        <p>Веб разработчик / Пакет мастер</p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nesciunt odio nobis ratione, minus impedit
@@ -93,7 +97,10 @@ export default function Header() {
                                 className="chevron link"
                             />
                         </summary>
-                        <p>2020-2020</p>
+                        <p>2021</p>
+                        <p>
+                            Веб разработка - с нуля до профессионала. Full Stack
+                        </p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nesciunt odio nobis ratione, minus impedit
