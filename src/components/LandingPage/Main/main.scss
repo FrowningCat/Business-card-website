@@ -6,9 +6,11 @@ $four04MainTextColor: red;
 $four04AdditionallyTextColor: darkred;
 $neon404Coor: deeppink;
 
-$textFontSizeMain: 1.5rem;
-$titleFontSizeMain: 2rem;
-$titleFontSizeAdditionally: 1.7rem;
+$textFontSizeMain: 1.1rem;
+$textSkillsSize: 1rem;
+$titleSkillsSize: 1.3rem;
+$titleFontSizeMain: 1.5rem;
+$titleFontSizeAdditionally: 1.3rem;
 
 $textLineHeightMain: 20px;
 $titleLineHeightMain: 30.3px;
@@ -132,8 +134,12 @@ $titleSizeText: 700;
                 &__clipboard {
                 }
                 &__title {
+                    font-size: $titleSkillsSize;
+                    line-height: $titleLineHeightAdditionally;
                 }
                 &__text {
+                    font-size: $textSkillsSize;
+                    line-height: $titleLineHeightAdditionally;
                     display: grid;
                     gap: 0.5rem;
                 }
@@ -179,6 +185,18 @@ summary {
     animation: flashing 3s infinite;
 }
 
+@media (max-width: 1138px) {
+    .main {
+        &__softSkills {
+            &__listSkills {
+                gap: 3rem;
+                grid-template-columns: repeat(1, 20rem);
+                grid-template-rows: minmax(3rem, 24rem);
+            }
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .main {
         &__examplesOfWorksBlock {
@@ -189,23 +207,17 @@ summary {
     }
 }
 
-@media (max-width: 1138px) {
-    .main {
-        &__softSkills {
-            &__listSkills {
-                gap: 3rem;
-                grid-template-columns: repeat(1, 20rem);
-                grid-template-rows: minmax(3rem, 18rem);
-            }
-        }
-    }
-}
-
 @media (max-width: 580px) {
     .main {
         &__examplesOfWorksBlock {
             &__listProducts {
                 grid-template-columns: repeat(1, 8.5rem);
+            }
+        }
+        &__softSkills {
+            &__listSkills {
+                gap: 3rem;
+                grid-template-rows: minmax(3rem, 30rem);
             }
         }
     }
