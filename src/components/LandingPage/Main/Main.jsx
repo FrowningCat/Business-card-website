@@ -113,6 +113,71 @@ export default function Header() {
                     </details>
                 </div>
             </div>
+            <div className="main__education">
+                <h5 className="main__education__title">Цели и планы</h5>
+                <div className="main__education__faqDetails">
+                    <details>
+                        <summary>
+                            <p>Развивать свой сайт про исторических деятелей</p>
+                            <img
+                                src={chevron}
+                                alt="chevron"
+                                className="chevron link"
+                            />
+                        </summary>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nesciunt odio nobis ratione, minus impedit
+                            debitis quam facere reiciendis perspiciatis cum
+                            iusto placeat culpa accusantium dolores harum ab
+                            totam pariatur soluta. Nulla, corrupti? Repudiandae
+                            perspiciatis aliquam similique voluptas. Iure,
+                            officiis deleniti.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <p>
+                                Сайт для игры Heroes of Might and Magic III:
+                                Horn of the Abyss
+                            </p>
+                            <img
+                                src={chevron}
+                                alt="chevron"
+                                className="chevron link"
+                            />
+                        </summary>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nesciunt odio nobis ratione, minus impedit
+                            debitis quam facere reiciendis perspiciatis cum
+                            iusto placeat culpa accusantium dolores harum ab
+                            totam pariatur soluta. Nulla, corrupti? Repudiandae
+                            perspiciatis aliquam similique voluptas. Iure,
+                            officiis deleniti.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <p>Сайт с подбором мемов по интересам</p>
+                            <img
+                                src={chevron}
+                                alt="chevron"
+                                className="chevron link"
+                            />
+                        </summary>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nesciunt odio nobis ratione, minus impedit
+                            debitis quam facere reiciendis perspiciatis cum
+                            iusto placeat culpa accusantium dolores harum ab
+                            totam pariatur soluta. Nulla, corrupti? Repudiandae
+                            perspiciatis aliquam similique voluptas. Iure,
+                            officiis deleniti.
+                        </p>
+                    </details>
+                </div>
+            </div>
             <div className="main__softSkills">
                 <h5 className="main__softSkills__title">
                     <span className="main__softSkills__title__text__notLit">
