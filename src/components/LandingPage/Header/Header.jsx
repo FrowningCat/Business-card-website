@@ -13,7 +13,7 @@ export default function Header() {
                         React programmer
                     </h3>
                     <p className="header__textBlock__info__aboutMe">
-                        Добрый день. Ищу работу на позицию front-end dev.
+                        Добрый день. Ищу работу на позицию frontend developer.
                         <b>
                             {' '}
                             Трудолюбивый, коммуникативный, трудностей не боюсь)

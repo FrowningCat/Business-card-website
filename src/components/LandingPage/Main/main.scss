@@ -153,6 +153,8 @@ $titleSizeText: 700;
             &__specificWork {
                 display: grid;
                 gap: 1rem;
+                height: 25rem;
+                border: 1px solid black;
                 &__name {
                     color: $textColorNameworkAndPast;
                 }
@@ -286,7 +288,7 @@ ul {
                     grid-template-columns: repeat(auto-fit, 10rem);
                 }
                 &__other {
-                    grid-template-columns: repeat(2, 8.5rem);
+                    grid-template-columns: repeat(1, 8.5rem);
                 }
             }
         }
@@ -306,8 +308,8 @@ ul {
                     grid-template-columns: repeat(2, 8.5rem);
                     grid-template-rows: repeat(4, 6rem);
                 }
-                &__other {
-                    grid-template-columns: repeat(2, 8.5rem);
+                &__specificWork {
+                    height: 30rem;
                 }
             }
         }
