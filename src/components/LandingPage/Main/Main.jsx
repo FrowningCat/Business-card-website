@@ -88,6 +88,29 @@ export default function Header() {
         },
     ];
 
+    function onClick() {
+        let nameFrontend = document.getElementById('frontEnd');
+        let nameOther = document.getElementById('other');
+        nameFrontend.setAttribute(
+            'class',
+            'main__workExperience__list__frontEnd'
+        );
+        nameOther.setAttribute(
+            'class',
+            'main__workExperience__list__otherNone'
+        );
+    }
+
+    function onClick2() {
+        let nameFrontend = document.getElementById('frontEnd');
+        let nameOther = document.getElementById('other');
+        nameFrontend.setAttribute(
+            'class',
+            'main__workExperience__list__frontEndNone'
+        );
+        nameOther.setAttribute('class', 'main__workExperience__list__other');
+    }
+
     return (
         <div className="main">
             <div className="main__examplesOfWorksBlock">
@@ -222,8 +245,25 @@ export default function Header() {
             </div>
             <div className="main__workExperience">
                 <h5 className="main__workExperience__title">Опыт работы</h5>
+                <div className="main__workExperience__buttonDiv">
+                    <button
+                        className="main__workExperience__buttonDiv__button"
+                        onClick={() => onClick()}
+                    >
+                        Frontend
+                    </button>
+                    <button
+                        className="main__workExperience__buttonDiv__button"
+                        onClick={() => onClick2()}
+                    >
+                        Другой
+                    </button>
+                </div>
                 <div className="main__workExperience__list">
-                    <div className="main__workExperience__list__frontEnd">
+                    <div
+                        className="main__workExperience__list__frontEnd"
+                        id="frontEnd"
+                    >
                         <Routes>
                             <Route
                                 path="/"
@@ -235,7 +275,10 @@ export default function Header() {
                             ></Route>
                         </Routes>
                     </div>
-                    <div className="main__workExperience__list__other">
+                    <div
+                        className="main__workExperience__list__other"
+                        id="other"
+                    >
                         <Routes>
                             <Route
                                 path="/"

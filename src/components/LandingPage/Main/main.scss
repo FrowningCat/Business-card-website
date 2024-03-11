@@ -1,6 +1,8 @@
 $textColor: #2d2d2d;
 $rareTextColor: #404040;
 $textColorAdditionally: #111;
+$textColorNameworkAndPast: #232323;
+$textColorDataworkAndDiscription: #858585;
 
 $four04MainTextColor: red;
 $four04AdditionallyTextColor: darkred;
@@ -110,22 +112,59 @@ $titleSizeText: 700;
             font-size: $titleFontSizeMain;
             line-height: $titleLineHeightMain;
         }
+        &__buttonDiv {
+            padding: 1% 0 0 15%;
+            display: flex;
+            gap: 1rem;
+            &__button {
+                cursor: pointer;
+                box-sizing: border-box;
+                padding: 0.5rem;
+            }
+            &__button:hover {
+                filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 15%));
+            }
+        }
         &__list {
             &__frontEnd {
                 width: 90vw;
                 margin-top: 3%;
                 display: grid;
-                grid-template-columns: repeat(3, 8.5rem);
+                grid-template-columns: repeat(auto-fit, 10rem);
+                grid-template-rows: repeat(4, 5rem);
                 gap: 2rem;
                 justify-content: space-evenly;
+            }
+            &__frontEndNone {
+                display: none;
             }
             &__other {
                 width: 90vw;
                 margin-top: 3%;
                 display: grid;
-                grid-template-columns: repeat(3, 8.5rem);
+                grid-template-columns: repeat(auto-fit, 10rem);
+                grid-template-rows: repeat(4, 5rem);
                 gap: 2rem;
                 justify-content: space-evenly;
+            }
+            &__otherNone {
+                display: none;
+            }
+            &__specificWork {
+                display: grid;
+                gap: 1rem;
+                &__name {
+                    color: $textColorNameworkAndPast;
+                }
+                &__dataWork {
+                    color: $textColorDataworkAndDiscription;
+                }
+                &__postWork {
+                    color: $textColorNameworkAndPast;
+                }
+                &__discription {
+                    color: $textColorDataworkAndDiscription;
+                }
             }
         }
     }
@@ -244,7 +283,7 @@ ul {
         &__workExperience {
             &__list {
                 &__frontEnd {
-                    grid-template-columns: repeat(2, 8.5rem);
+                    grid-template-columns: repeat(auto-fit, 10rem);
                 }
                 &__other {
                     grid-template-columns: repeat(2, 8.5rem);
@@ -265,6 +304,7 @@ ul {
             &__list {
                 &__frontEnd {
                     grid-template-columns: repeat(2, 8.5rem);
+                    grid-template-rows: repeat(4, 6rem);
                 }
                 &__other {
                     grid-template-columns: repeat(2, 8.5rem);

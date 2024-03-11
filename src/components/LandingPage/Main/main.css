@@ -92,21 +92,58 @@
   font-size: 1.5rem;
   line-height: 30.3px;
 }
+.main__workExperience__buttonDiv {
+  padding: 1% 0 0 15%;
+  display: flex;
+  gap: 1rem;
+}
+.main__workExperience__buttonDiv__button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.main__workExperience__buttonDiv__button:hover {
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.15));
+}
 .main__workExperience__list__frontEnd {
   width: 90vw;
   margin-top: 3%;
   display: grid;
-  grid-template-columns: repeat(3, 8.5rem);
+  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-template-rows: repeat(4, 5rem);
   gap: 2rem;
   justify-content: space-evenly;
+}
+.main__workExperience__list__frontEndNone {
+  display: none;
 }
 .main__workExperience__list__other {
   width: 90vw;
   margin-top: 3%;
   display: grid;
-  grid-template-columns: repeat(3, 8.5rem);
+  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-template-rows: repeat(4, 5rem);
   gap: 2rem;
   justify-content: space-evenly;
+}
+.main__workExperience__list__otherNone {
+  display: none;
+}
+.main__workExperience__list__specificWork {
+  display: grid;
+  gap: 1rem;
+}
+.main__workExperience__list__specificWork__name {
+  color: #232323;
+}
+.main__workExperience__list__specificWork__dataWork {
+  color: #858585;
+}
+.main__workExperience__list__specificWork__postWork {
+  color: #232323;
+}
+.main__workExperience__list__specificWork__discription {
+  color: #858585;
 }
 .main__softSkills {
   padding: 1% 0 1%;
@@ -208,7 +245,7 @@ ul {
     grid-template-columns: repeat(2, 8.5rem);
   }
   .main__workExperience__list__frontEnd {
-    grid-template-columns: repeat(2, 8.5rem);
+    grid-template-columns: repeat(auto-fit, 10rem);
   }
   .main__workExperience__list__other {
     grid-template-columns: repeat(2, 8.5rem);
@@ -220,6 +257,7 @@ ul {
   }
   .main__workExperience__list__frontEnd {
     grid-template-columns: repeat(2, 8.5rem);
+    grid-template-rows: repeat(4, 6rem);
   }
   .main__workExperience__list__other {
     grid-template-columns: repeat(2, 8.5rem);
