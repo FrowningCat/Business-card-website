@@ -1,23 +1,60 @@
-import { useState, useEffect } from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Items from './Items/Items';
-import CertainItems from './CertainItems/CertainItems';
 import chevron from '../../../assets/img/chevron.png';
 import clipboard from '../../../assets/img/clipboard.png';
+import websityHistory from '../../../assets/img/websiteHistory.png';
+import websityLanding from '../../../assets/img/websiteLanding.png';
+import websity404 from '../../../assets/img/website404.png';
+import websityGame from '../../../assets/img/websiteGame.png';
+import websityList from '../../../assets/img/websiteList.png';
+import websitySidebar from '../../../assets/img/websiteSidebar.png';
 import './main.css';
 
 export default function Header() {
-    const [items, setItems] = useState([]);
-
-    const f = async () => {
-        const res = await fetch('https://reqres.in/api/users/');
-        const json = await res.json();
-        setItems(json.data);
-    };
-
-    useEffect(() => {
-        f();
-    }, []);
+    const examplesOfWorks = [
+        {
+            id: 1,
+            title: 'History in personalities',
+            content: 'Next.js',
+            img: websityHistory,
+            link: 'https://history-in-personalities-3d4vk9ab5-frowningcats-projects.vercel.app/',
+        },
+        {
+            id: 2,
+            title: 'Visa to USE landing',
+            content: 'React',
+            img: websityLanding,
+            link: 'https://visa-landing-frex0zget-frowningcats-projects.vercel.app/',
+        },
+        {
+            id: 3,
+            title: 'Animated error404',
+            content: 'html5/css3',
+            img: websity404,
+            link: 'https://frowningcat.github.io/Error404-on-html/',
+        },
+        {
+            id: 4,
+            title: 'Duck hunt game',
+            content: 'html5/css3',
+            img: websityGame,
+            link: 'https://frowningcat.github.io/game-on-html-and-css/',
+        },
+        {
+            id: 5,
+            title: 'List products',
+            content: 'React',
+            img: websityList,
+            link: 'https://list-products-5xmkx9mk4-frowningcats-projects.vercel.app/',
+        },
+        {
+            id: 6,
+            title: 'Sidebar',
+            content: 'React',
+            img: websitySidebar,
+            link: 'https://sidebar-test-task-gold.vercel.app/',
+        },
+    ];
 
     return (
         <div className="main">
@@ -28,12 +65,8 @@ export default function Header() {
                 <div className="main__examplesOfWorksBlock__listProducts">
                     <Routes>
                         <Route
-                            path="/items/:id"
-                            element={<CertainItems items={items} />}
-                        ></Route>
-                        <Route
                             path="/"
-                            element={<Items items={items} />}
+                            element={<Items items={examplesOfWorks} />}
                         ></Route>
                     </Routes>
                 </div>

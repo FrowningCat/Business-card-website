@@ -7,7 +7,7 @@ export default function Items({ items }) {
                 items.map((item) => {
                     return (
                         <>
-                            <Link to={`/items/${item.id}`}>
+                            <Link to={`${item.link}`} target="_blank">
                                 <div
                                     className="main__examplesOfWorksBlock__listProducts__specificProduct"
                                     key={item.id}
@@ -15,15 +15,15 @@ export default function Items({ items }) {
                                     <div>
                                         <img
                                             className="main__examplesOfWorksBlock__listProducts__specificProduct__img"
-                                            key={item.avatar}
-                                            src={item.avatar}
+                                            key={item.img}
+                                            src={item.img}
                                         />
                                     </div>
                                     <p className="main__examplesOfWorksBlock__listProducts__specificProduct__name">
-                                        {item.first_name}
+                                        {item.title}
                                     </p>
                                     <p className="main__examplesOfWorksBlock__listProducts__specificProduct__language">
-                                        {item.first_name}
+                                        {item.content}
                                     </p>
                                 </div>
                             </Link>
