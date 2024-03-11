@@ -276,7 +276,7 @@ export default function Header() {
                         </Routes>
                     </div>
                     <div
-                        className="main__workExperience__list__other"
+                        className="main__workExperience__list__otherNone"
                         id="other"
                     >
                         <Routes>
