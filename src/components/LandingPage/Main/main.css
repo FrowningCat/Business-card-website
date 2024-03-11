@@ -79,6 +79,35 @@
   display: grid;
   gap: 12px;
 }
+.main__workExperience {
+  padding: 1% 0 1%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  max-width: 70vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.main__workExperience__title {
+  font-size: 1.5rem;
+  line-height: 30.3px;
+}
+.main__workExperience__list__frontEnd {
+  width: 90vw;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 8.5rem);
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.main__workExperience__list__other {
+  width: 90vw;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 8.5rem);
+  gap: 2rem;
+  justify-content: space-evenly;
+}
 .main__softSkills {
   padding: 1% 0 1%;
   display: grid;
@@ -178,10 +207,22 @@ ul {
   .main__examplesOfWorksBlock__listProducts {
     grid-template-columns: repeat(2, 8.5rem);
   }
+  .main__workExperience__list__frontEnd {
+    grid-template-columns: repeat(2, 8.5rem);
+  }
+  .main__workExperience__list__other {
+    grid-template-columns: repeat(2, 8.5rem);
+  }
 }
 @media (max-width: 580px) {
   .main__examplesOfWorksBlock__listProducts {
     grid-template-columns: repeat(1, 8.5rem);
+  }
+  .main__workExperience__list__frontEnd {
+    grid-template-columns: repeat(2, 8.5rem);
+  }
+  .main__workExperience__list__other {
+    grid-template-columns: repeat(2, 8.5rem);
   }
   .main__softSkills__listSkills {
     gap: 3rem;

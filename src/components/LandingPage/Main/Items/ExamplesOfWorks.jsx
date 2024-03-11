@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function Items({ items }) {
+export default function ExamplesOfWorks({ items }) {
     return (
         <>
             {items.length &&

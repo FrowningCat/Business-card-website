@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import Items from './Items/Items';
+import ExamplesOfWorks from './Items/ExamplesOfWorks';
+import WorkExperienceFront from './Items/WorkExperienceFront';
+import WorkExperienceOther from './Items/WorkExperienceOther';
 import chevron from '../../../assets/img/chevron.png';
 import clipboard from '../../../assets/img/clipboard.png';
 import websityHistory from '../../../assets/img/websiteHistory.png';
@@ -21,10 +23,10 @@ export default function Header() {
         },
         {
             id: 2,
-            title: 'Visa to USE landing',
-            content: 'React',
+            title: 'Psychology tests',
+            content: 'React (in development)',
             img: websityLanding,
-            link: 'https://visa-landing-frex0zget-frowningcats-projects.vercel.app/',
+            link: 'https://psychology-tests-9ea4d03qu-frowningcats-projects.vercel.app/',
         },
         {
             id: 3,
@@ -56,6 +58,36 @@ export default function Header() {
         },
     ];
 
+    const workExperienceFront = [
+        {
+            id: 1,
+            title: 'Аэродиск',
+            data: 'Июль 2023 — октябрь 2023',
+            post: 'Junior front-end программист',
+            content:
+                'Участвовал в команде разработчиков над сайтом нового продукта компании. Отвечал следующие страницы: landing, authorization, profile и main на React, Next js + ts.',
+        },
+        {
+            id: 2,
+            title: 'iDigit',
+            data: 'Май 2022 — июль 2022',
+            post: 'Junior front-end программист',
+            content:
+                'Участвовал в команде разработчиков над проектом системы анализа простоев скважин, React.',
+        },
+    ];
+
+    const workExperienceOther = [
+        {
+            id: 1,
+            title: 'ООО АСК',
+            data: 'Февраль 2021 — апрель 2021',
+            post: 'Техник группы внедрения проектов АСОДУ',
+            content:
+                'Разработка мнемосхем в ПО Unifotmance Insight (Honeywell), привязка тегов БДРВ к шейпам, прогрузка мнемосхем в продуктивную среду.',
+        },
+    ];
+
     return (
         <div className="main">
             <div className="main__examplesOfWorksBlock">
@@ -66,7 +98,9 @@ export default function Header() {
                     <Routes>
                         <Route
                             path="/"
-                            element={<Items items={examplesOfWorks} />}
+                            element={
+                                <ExamplesOfWorks items={examplesOfWorks} />
+                            }
                         ></Route>
                     </Routes>
                 </div>
@@ -184,6 +218,35 @@ export default function Header() {
                             </ul>
                         </p>
                     </details>
+                </div>
+            </div>
+            <div className="main__workExperience">
+                <h5 className="main__workExperience__title">Опыт работы</h5>
+                <div className="main__workExperience__list">
+                    <div className="main__workExperience__list__frontEnd">
+                        <Routes>
+                            <Route
+                                path="/"
+                                element={
+                                    <WorkExperienceFront
+                                        items={workExperienceFront}
+                                    />
+                                }
+                            ></Route>
+                        </Routes>
+                    </div>
+                    <div className="main__workExperience__list__other">
+                        <Routes>
+                            <Route
+                                path="/"
+                                element={
+                                    <WorkExperienceOther
+                                        items={workExperienceOther}
+                                    />
+                                }
+                            ></Route>
+                        </Routes>
+                    </div>
                 </div>
             </div>
             <div className="main__education">
